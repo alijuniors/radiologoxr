@@ -1,0 +1,26 @@
+[
+   {
+      "title":"Usted Inicio Sesion",
+      "time":"Ahora",
+      "badge":"Movil",
+      "highlight":true
+   },
+   {
+      "title":"Usted Inicio Sesion",
+      "time":"1 min antes",
+      "badge":"Web",
+      "highlight":false
+   },
+   {
+      "title":"Modifico un Estudio",
+      "time":"1 mins antes",
+      "badge":"Android",
+      "highlight":false
+   },
+   {
+      "title":"Cerro Sesion",
+      "time":"1 min antes",
+      "badge":"Android",
+      "highlight":true
+   }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "img": "/assets/img/dashboard/rayosx.jpg",
+    "sku": "Torax Ap",
+    "title": "Alberto Lorenzo",
+    "price": "Dr.Acosta",
+    "qty": "SI",
+    "revenue": "SI"
+  },
+  {
+    "img": "/assets/img/dashboard/craneo.jpg",
+    "sku": "Craneo Ap",
+    "title": "Camila Gomez Antonia",
+    "price": "Dr.Acosta",
+    "qty": "SI",
+    "revenue": "SI"
+  },
+  {
+    "img": "/assets/img/dashboard/mano.jpg",
+    "sku": "Mano",
+    "title": "Americo Hidalgo Lopez",
+    "price": "Dr.Acosta",
+    "qty": "SI",
+    "revenue": "SI"
+  },
+  {
+    "img": "/assets/img/dashboard/rayosx2.jpg",
+    "sku": "Rayos x",
+    "title": "Ali Sojo",
+    "price": "Dr.Acosta",
+    "qty": "SI",
+    "revenue": "SI"
+  },
+  {
+    "img": "/assets/img/dashboard/torax.jpg",
+    "sku": "Torax Ap",
+    "title": "Eduardo Castro",
+    "price": "Dr.Acosta",
+    "qty": "SI",
+    "revenue": "SI"
+  }
+]

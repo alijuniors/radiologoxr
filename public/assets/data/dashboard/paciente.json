@@ -1,0 +1,34 @@
+[
+    {
+     "id": 1,   
+    "nombre":"Ali Sojo",
+    "cedula":"123-456-789-234",
+    "factura":"123-564",
+    "modalidad":"Rayos x",
+    "sucursal":"Romana"
+    },
+    {
+        "id": 2,   
+       "nombre":"Eduardo Castro",
+       "cedula":"123-278-789-954",
+       "factura":"123-678",
+       "modalidad":"Encefalograma",
+       "sucursal":"Santo Domingo"
+    },
+    {
+        "id": 3,   
+       "nombre":"Agustin Rivera",
+       "cedula":"123-492-789-254",
+       "factura":"574-213",
+       "modalidad":"Craneo",
+       "sucursal":"Bavaro"
+    },
+    {
+        "id": 4,   
+       "nombre":"Yecenia Hernandez",
+       "cedula":"765-492-789-254",
+       "factura":"098-213",
+       "modalidad":"Rayos x Torax",
+       "sucursal":"Santiago"
+    }
+  ]

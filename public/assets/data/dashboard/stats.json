@@ -1,0 +1,104 @@
+[
+  {
+    "title": "ESTUDIOS REALIZADOS",
+    "total": "071",
+    "info": [
+      {
+        "icon": "fa fa-chevron-up fa-fw me-1",
+        "text": "33.3% Mas que la ultima semana"
+      },
+      {
+        "icon": "far fa-user fa-fw me-1",
+        "text": "45.5% Nuevos visitantes"
+      },
+      {
+        "icon": "far fa-times-circle fa-fw me-1",
+        "text": "3.25% Porcentaje de rebote"
+      }
+    ],
+    "chartData": [
+      {
+        "name": "Visitors",
+        "data": [
+          69, 34, 70, 73, 41, 32, 73, 72, 89, 57, 42, 86, 78
+        ]
+      }
+    ],
+    "chartType": "bar",
+    "chartHeight": 30
+  },
+  {
+    "title": "PACIENTES ASIGNADOS",
+    "total": "022",
+    "info": [
+      {
+        "icon": "fa fa-chevron-up fa-fw me-1",
+        "text": "20.4% Mas que la semana pasada"
+      },
+      {
+        "icon": "fa fa-shopping-bag fa-fw me-1",
+        "text": "33.5% Nuevos pacientes"
+      },
+      {
+        "icon": "fa fa-dollar-sign fa-fw me-1",
+        "text": "6.21% tasa de conversión"
+      }
+    ],
+    "chartData": [
+      {
+        "name": "Sales",
+        "data": [
+          81, 89, 71, 75, 53, 47, 78, 33, 71, 81, 45, 43, 68
+        ]
+      }
+    ],
+    "chartType": "line",
+    "chartHeight": 30
+  },
+  {
+    "title": "ESTUDIOS VISTOS",
+    "total": "4,490",
+    "info": [
+      {
+        "icon": "fa fa-chevron-up fa-fw me-1",
+        "text": "59.5% Mas de estudios vistos"
+      },
+      {
+        "icon": "fab fa-facebook-f fa-fw me-1",
+        "text": "45.5% Desde la web"
+      },
+      {
+        "icon": "fab fa-youtube fa-fw me-1",
+        "text": "15.25%  Desde Movil "
+      }
+    ],
+    "chartData": [
+      77, 80, 70
+    ],
+    "chartType": "pie",
+    "chartHeight": 45
+  },
+  {
+    "title": "CASOS REPORTADOS",
+    "total": "4.5TB",
+    "info": [
+      {
+        "icon": "fa fa-chevron-up fa-fw me-1",
+        "text": "5.3% mas que la semana pasada"
+      },
+      {
+        "icon": "far fa-hdd fa-fw me-1",
+        "text": "10.5% mas de total de casos"
+      },
+      {
+        "icon": "far fa-hand-point-up fa-fw me-1",
+        "text": "2MB por caso"
+      }
+    ],
+    "chartData": [
+      83, 74, 58, 70, 78
+    ],
+    "chartType": "donut",
+    "chartHeight": 45
+  }
+]
