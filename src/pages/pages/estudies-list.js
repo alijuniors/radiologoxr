@@ -131,7 +131,12 @@ function Pages_Estudies_List(){
 					<div className="col-xl-3">
 						<Card className="Justify-content-center">
 							<CardBody className="Justify-content-center body_card_p">
-								<img className="col-auto p-4 text-center" src="/assets/img/dashboard/cuerpo_humano.jpg" alt="" />
+								<div className="scan">
+									<div className="qrcode"></div>
+									
+									<div className="border"></div>
+								</div>
+								
 				        	</CardBody>
 						</Card>
 					</div>
