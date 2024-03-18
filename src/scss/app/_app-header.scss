@@ -479,10 +479,11 @@ width: 170px;
 }
  .scan1280 .qrcode1280{
 	position: relative;
-	width: 200px;
+	width: 210px;
 	height: 950px;
 	background: url("../.././../public/assets/img/dashboard/cuerpo_humano.jpg");
-	background-size: 200px;
+	background-size: 250px 950px;
+	background-repeat: no-repeat;
 
  }
  .scan1280 .qrcode1280::before{
@@ -492,7 +493,8 @@ width: 170px;
 	left:0;
 	width: 100%;
 	background: url("../.././../public/assets/img/dashboard/scanerb.jpg");
-	background-size: 200px;
+	background-size: 250px 950px;
+	background-repeat: no-repeat;
 	overflow: hidden;
 	animation: animate 4s ease-in-out infinite;
  }
