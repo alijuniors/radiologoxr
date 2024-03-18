@@ -97,16 +97,19 @@ function Pages_Estudies_List(){
 		if((width >= 1280) && (width < 1450)){	
 					
 			var change_class = document.getElementsByClassName("change_classse");
-		
+			var change_class1 = document.getElementsByClassName("change_classs");
+			var div = document.getElementById('etiqueta');
+			if(div !== null){
+				while (div.hasChildNodes()){
+					div.removeChild(div.lastChild);
+				}
+			}
             for (var i = 0; i<change_class.length; i++) {                
-				change_class[0].classList.remove("scan");
-				change_class[0].classList.add("scan1280");
-				change_class[1].classList.remove("qrcode");
-				change_class[1].classList.add("qrcode1280");
-				change_class[2].classList.remove("border");
-				change_class[2].classList.add("border1280"); 
-				change_class[3].classList.add("width1280");
-				change_class[4].classList.add("width1280");               
+				change_class[0].classList.add("width1280");
+				change_class[1].classList.add("width1280");     
+				change_class1[0].classList.remove("col-xl-3"); 
+				change_class1[1].classList.remove("col-xl-6");
+				change_class1[1].classList.add("col-xl-9");                
 			}
 		}
 		
@@ -145,15 +148,15 @@ function Pages_Estudies_List(){
 					<div className="col-xl-3 change_classs" id="etiqueta">
 						<Card className="Justify-content-center">
 							<CardBody className="Justify-content-center body_card_p">
-								<div className="scan change_classse">
-									<div className="qrcode change_classse"></div>									
-									<div className="border change_classse"></div>
+								<div className="scan">
+									<div className="qrcode"></div>									
+									<div className="border"></div>
 								</div>
 								
 				        	</CardBody>
 						</Card>
 					</div>
-						<div className="col-xl-6">														
+						<div className="col-xl-6 change_classs">														
 							<div id="datatable" className="mb-5 datatable">
 								<Card>
 								    
