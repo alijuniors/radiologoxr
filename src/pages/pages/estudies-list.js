@@ -234,7 +234,9 @@ function Pages_Estudies_List(){
 						 :
 						 
 						 <>
-						
+						   <div className="change_classse"></div>
+						   <div className="change_classse"></div>
+						   
 						 </>
 						
 

@@ -482,7 +482,7 @@ width: 170px;
 	width: 210px;
 	height: 950px;
 	background: url("../.././../public/assets/img/dashboard/cuerpo_humano.jpg");
-	background-size: 250px 950px;
+	background-size: 250px 930px;
 	background-repeat: no-repeat;
 
  }
@@ -493,7 +493,7 @@ width: 170px;
 	left:0;
 	width: 100%;
 	background: url("../.././../public/assets/img/dashboard/scanerb.jpg");
-	background-size: 250px 950px;
+	background-size: 250px 930px;
 	background-repeat: no-repeat;
 	overflow: hidden;
 	animation: animate 4s ease-in-out infinite;
@@ -514,7 +514,7 @@ width: 170px;
 	inset: 20px;
 	width: calc(100% - 40px);
 	height: 2px;
-	background: aqua;
+	background: rgb(17, 0, 255);
 	filter: drop-shadow(0 0 20px #3542fd) drop-shadow( 0 0 60px #3542fd);
 	animation: animateLine 4s ease-in-out infinite;
  }
