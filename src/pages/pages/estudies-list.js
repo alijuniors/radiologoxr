@@ -78,21 +78,35 @@ function Pages_Estudies_List(){
 		width = parseInt(width);
 		if((width >= 1024) && (width < 1280)){
 			var change_class = document.getElementsByClassName("change_class");
-			
-			
-            for (var i = 0; i<change_class.length; i++) {
+			var div = document.getElementById('etiqueta');
+			if(div !== null){
+				while (div.hasChildNodes()){
+					div.removeChild(div.lastChild);
+				}
+			}
+	
+			for (var i = 0; i<change_class.length; i++) {			
                 change_class[0].classList.remove("mb-4");
-                change_class[1].classList.remove("mb-10");
+				change_class[1].classList.remove("img_p_e");
+                change_class[2].classList.remove("mb-10");
                 change_class[0].classList.add("col-md-5");
-                change_class[1].classList.add("col-md-6");
+				change_class[1].classList.add("imagenpe1280");
+                change_class[2].classList.add("col-md-6");
             }
 		}
-		if((width >= 1280) && (width < 1450)){			
+		if((width >= 1280) && (width < 1450)){	
+					
 			var change_class = document.getElementsByClassName("change_classse");
-            for (var i = 0; i<change_class.length; i++) {
-                change_class[0].classList.add("width1280");
-				change_class[1].classList.add("width1280");
-                
+		
+            for (var i = 0; i<change_class.length; i++) {                
+				change_class[0].classList.remove("scan");
+				change_class[0].classList.add("scan1280");
+				change_class[1].classList.remove("qrcode");
+				change_class[1].classList.add("qrcode1280");
+				change_class[2].classList.remove("border");
+				change_class[2].classList.add("border1280"); 
+				change_class[3].classList.add("width1280");
+				change_class[4].classList.add("width1280");               
 			}
 		}
 		
@@ -128,13 +142,12 @@ function Pages_Estudies_List(){
 			<div className="row">
 				<div className="col-xl-12">
 					<div className="row">
-					<div className="col-xl-3">
+					<div className="col-xl-3 change_classs" id="etiqueta">
 						<Card className="Justify-content-center">
 							<CardBody className="Justify-content-center body_card_p">
-								<div className="scan">
-									<div className="qrcode"></div>
-									
-									<div className="border"></div>
+								<div className="scan change_classse">
+									<div className="qrcode change_classse"></div>									
+									<div className="border change_classse"></div>
 								</div>
 								
 				        	</CardBody>
@@ -176,7 +189,7 @@ function Pages_Estudies_List(){
 										<div className="mb-4 change_class">					
 										<Card className="change_classse">
 											<CardBody className="Justify-content-center">																		
-												<img className="img_p_e col-auto  text-center" src={detail.img} alt="" />  										
+												<img className="img_p_e change_class col-auto  text-center" src={detail.img} alt="" />  										
 											</CardBody>									
 										</Card>  
 									   </div>                           
