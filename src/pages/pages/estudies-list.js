@@ -149,8 +149,12 @@ function Pages_Estudies_List(){
 						<Card className="Justify-content-center">
 							<CardBody className="Justify-content-center body_card_p">
 								<div className="scan">
+								
 									<div className="qrcode"></div>									
-									<div className="border"></div>
+									<div className="border">
+									<button className="craneo"></button> 
+									</div>
+									
 								</div>
 								
 				        	</CardBody>
