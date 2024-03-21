@@ -3,6 +3,7 @@ import { Card, CardBody } from './../../components/card/card.jsx';
 import { NavScrollTo } from './../../components/nav-scroll-to/nav-scroll-to.jsx';
 import 'lity';
 import 'lity/dist/lity.min.css';
+
 import Highlight from 'react-highlight';
 import 'datatables.net-bs5/css/dataTables.bootstrap5.min.css';
 import 'datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css';
@@ -15,6 +16,8 @@ import DataTable from 'datatables.net-fixedcolumns-bs5';
 import Table_a from "../../components/table_a/table_x_d.jsx";
 
 const $ = require('jquery');
+
+require('../../components/maphilight/jquery.maphilight.js');
 $.DataTable = require('datatables.net');
 require('datatables.net-bs5');
 require('datatables.net-buttons');
@@ -30,7 +33,39 @@ require('datatables.net-fixedcolumns-bs5');
 
 
 
+
 function Pages_Estudies_List(){
+
+	$(".partes").on("click", function(e){
+		e.preventDefault();
+	   var value = $(this).attr('value');
+	   alert(value);
+	})
+
+	$(function() {
+		$('.map').maphilight({
+			fill: true,
+			fillColor: '044572',
+			fillOpacity: 0.2,
+			stroke: true,
+			strokeColor: '044572',
+			strokeOpacity: 4,
+			strokeWidth: 1,
+			fade: true,
+			alwaysOn: false,
+			neverOn: false,
+			groupBy: false,
+			wrapClass: true,
+			shadow: false,
+			shadowX: 0,
+			shadowY: 0,
+			shadowRadius: 6,
+			shadowColor: '000000',
+			shadowOpacity: 0.1,
+			shadowPosition: 'outside',
+			shadowFrom: true
+	});
+	});
     
     const [code1, setCode1] = useState();
 	const [selectitem, setSelectitem] = useState(0);
@@ -57,6 +92,8 @@ function Pages_Estudies_List(){
 
 		setSelectitem(item);
 	  };
+
+	
 
 	
 
@@ -148,15 +185,18 @@ function Pages_Estudies_List(){
 					<div className="col-xl-3 change_classs" id="etiqueta">
 						<Card className="Justify-content-center">
 							<CardBody className="Justify-content-center body_card_p">
-								<div className="scan">
-								
-									<div className="qrcode"></div>									
+								<div className="scan" >								
+									<div className="qrcode" >
+										</div>									
 									<div className="border">
-									<button className="craneo"></button> 
-									</div>
-									
-								</div>
-								
+									<img src="/assets/img/dashboard/cuerpohumanopoligono.svg" class="map"  usemap="#workmap"></img>
+                                    <map name="workmap">
+										<area  value="1"  shape="poly" class="partes" coords="132,52,132,3,211,3,211,52" title="craneo" href="#" ></area>
+										<area  value="2" shape="poly" class="partes" coords="147.4,146.9,147.4,115.3,189.2,115.3,189.2,146.9" title="cervical" href="#" ></area>
+									</map>
+
+									</div>									
+								</div>					
 				        	</CardBody>
 						</Card>
 					</div>
@@ -208,7 +248,7 @@ function Pages_Estudies_List(){
 												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">GRUPO DE EDAD: {detail.grupo_edad}</div>
 												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">CEDULA: {detail.cedula}</div>
 												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">FACTURA #: {detail.nfactura}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">{detail.examen}</div>
+												<div class="h-28px  fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">{detail.examen}</div>
 												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">MODALIDAD: {detail.modalidad}</div>
 												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">SERIES / IMAGENES: {detail.series}</div>
 												<div class="h-40px fs-13px overflow-hidden mb-n1 button_bar_e  col-auto p-1 text-center"><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver estudio</a><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver en weasis</a><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver en horos</a></div>
