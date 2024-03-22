@@ -445,14 +445,126 @@ width: 170px;
 .container_xl{
 	max-width: 1660px !important;
 }
-.craneo:hover{
-	background: url("../.././../public/assets/img/dashboard/craneob.jpg");
-	transform: scale(1.5);
+.react-calendar{
+	background: #121414 !important;
 }
+.img-es{
+	width: 320px;
+	height: 900px;
+}
+.scan{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+ .scan .qrcode{
+	position: relative;
+	width: 320px;
+	height: 900px;
+	background: url("../.././../public/assets/img/dashboard/BodyRadioloGOx.png");
+	background-repeat: no-repeat;
+	background-size: 320px 900px;
 
+ }
+ .scan .qrcode::before{
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	background: url("../.././../public/assets/img/dashboard/BodyRadioloGOxbn.png");
+	background-repeat: no-repeat;
+	background-size: 320px 900px;
+	overflow: hidden;
+	animation: animate 5s ease-in-out infinite;
+ }
+ @keyframes animate {
+	20%{
+		height: 20px;
+	}
+	50%{
+		height: calc(110% - 20px)
+	}
+ }
+ .scan .qrcode::after{
+	content: "";
+	position: absolute;
+	inset: 0px;
+	width: calc(100% - 0px);
+	height: 4px;
+	background: rgb(17, 0, 255);
+	filter: drop-shadow(0 0 20px #3542fd) drop-shadow( 0 0 60px #3542fd);
+	animation: animateLine 5s ease-in-out infinite;
+ }
+ @keyframes animateLine {
+   	20%{
+		top: 0px;
+	}
+	50%{
+		top: calc(120% - 200px);
+	}
+ }
+.border{
+	position: absolute;
+	inset: 0;
+	background: url();
+	background-size: 360px;
+	background-repeat: no-repeat;
+	animation: animateText 0.5s linear initial infinite;
+ }
+ div.mapa_imagen {
+	position: relative
+  }
+  ul.notas li {
+	list-style: none;
+	display: none;
+	position: absolute;
+	border:  transparent ;
+	background-color:  transparent ; 
+  }
+  div.mapa_imagen:hover ul.notas li {
+	display: block;
+  }
+  ul.notas li p {
+	margin: 10px 0 0 0;
+	padding: .3em;
+	display: none;
+	background: #FFF;
+	opacity: 0.65;
+	position: absolute;
+	top: 100%;
+  }
+  ul.notas li li:hover  {
+	display: block;
+  }
+  
+  ul.notas li#nota1  {
+	width: 100px; height: 130px; top: 0px; left: 135px;
+  }
+  ul.notas li#nota2 {
+	width: 30px; height: 200px; top: 200px; left: 100px;
+  }
+  ul.notas li#nota3 {
+	width: 60px; height: 60px; top: 200px; left: 150px;
+  }
 
+ .craneo{
+	width: 65px; 
+	height: 50px; 
+	cursor: pointer;
+	margin-top: 10% !important;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 2s;
+ }
+ .craneo:hover{
+	background-color: black ;
+	border: medium solid white;
+	opacity: 0.5;
+	transform: scale(1.2);
+ }
 
-
-
+ 
 
 

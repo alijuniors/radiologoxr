@@ -13,7 +13,8 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import './index.css';
 import './scss/styles.scss';
-
+import '../node_modules/@wojtekmaj/react-daterange-picker/dist/DateRangePicker.css';
+import '../node_modules/react-calendar/dist/Calendar.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container);

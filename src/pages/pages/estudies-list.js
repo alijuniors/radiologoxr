@@ -16,7 +16,6 @@ import DataTable from 'datatables.net-fixedcolumns-bs5';
 import Table_a from "../../components/table_a/table_x_d.jsx";
 
 const $ = require('jquery');
-
 require('../../components/maphilight/jquery.maphilight.js');
 $.DataTable = require('datatables.net');
 require('datatables.net-bs5');
@@ -185,17 +184,19 @@ function Pages_Estudies_List(){
 					<div className="col-xl-3 change_classs" id="etiqueta">
 						<Card className="Justify-content-center">
 							<CardBody className="Justify-content-center body_card_p">
+							    <div class="mapa_imagen">
+											
+										
 								<div className="scan" >								
 									<div className="qrcode" >
-										</div>									
-									<div className="border">
-									<img src="/assets/img/dashboard/cuerpohumanopoligono.svg" class="map"  usemap="#workmap"></img>
-                                    <map name="workmap">
-										<area  value="1"  shape="poly" class="partes" coords="132,52,132,3,211,3,211,52" title="craneo" href="#" ></area>
-										<area  value="2" shape="poly" class="partes" coords="147.4,146.9,147.4,115.3,189.2,115.3,189.2,146.9" title="cervical" href="#" ></area>
-									</map>
-
 									</div>									
+									<div className="border" >
+									<ul class="notas">
+    											<li id="nota1"><button class="craneo map" href="#" title="craneo"></button></li>
+    											<li id="nota2"><button class="cervical" href="#" title="cervical"></button></li>
+  											</ul>	
+									</div>									
+								</div>
 								</div>					
 				        	</CardBody>
 						</Card>
