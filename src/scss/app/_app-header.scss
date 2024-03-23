@@ -450,7 +450,7 @@ width: 170px;
 }
 .img-es{
 	width: 320px;
-	height: 900px;
+	height: 700px;
 }
 .scan{
 	position: relative;
@@ -461,10 +461,10 @@ width: 170px;
  .scan .qrcode{
 	position: relative;
 	width: 320px;
-	height: 900px;
+	height: 700px;
 	background: url("../.././../public/assets/img/dashboard/BodyRadioloGOx.png");
 	background-repeat: no-repeat;
-	background-size: 320px 900px;
+	background-size: 320px 700px;
 
  }
  .scan .qrcode::before{
@@ -475,7 +475,7 @@ width: 170px;
 	width: 100%;
 	background: url("../.././../public/assets/img/dashboard/BodyRadioloGOxbn.png");
 	background-repeat: no-repeat;
-	background-size: 320px 900px;
+	background-size: 320px 700px;
 	overflow: hidden;
 	animation: animate 5s ease-in-out infinite;
  }
@@ -484,7 +484,7 @@ width: 170px;
 		height: 20px;
 	}
 	50%{
-		height: calc(110% - 20px)
+		height: calc(110% - 40px)
 	}
  }
  .scan .qrcode::after{
@@ -540,30 +540,257 @@ width: 170px;
   }
   
   ul.notas li#nota1  {
-	width: 100px; height: 130px; top: 0px; left: 135px;
+	width: 100px; height: 130px; top: -2px; left: 127px;
   }
   ul.notas li#nota2 {
-	width: 30px; height: 200px; top: 200px; left: 100px;
+	width: 30px; height: 200px; top: 93px; left: 148px;
   }
   ul.notas li#nota3 {
-	width: 60px; height: 60px; top: 200px; left: 150px;
+	width: 60px; height: 60px; top: 120px; left: 115px;
+  }
+  ul.notas li#nota4 {
+	width: 60px; height: 60px; top: 138px; left: 30px;
+  }
+  ul.notas li#nota5 {
+	width: 60px; height: 60px; top: 139px; left: 243px;
+  }
+    ul.notas li#nota6 {
+	width: 60px; height: 60px; top: 430px; left: 10px;
+  }
+    ul.notas li#nota7 {
+	width: 60px; height: 60px; top: 430px; left: 270px;
+  }
+    ul.notas li#nota8 {
+	width: 60px; height: 60px; top: 365px; left: 100px;
+  }
+    ul.notas li#nota9 {
+	width: 60px; height: 60px; top: 465px; left:92px;
+  }
+    ul.notas li#nota10 {
+	width: 60px; height: 60px; top: 465px; left: 180px;
+  }
+    ul.notas li#nota11 {
+	width: 60px; height: 60px; top: 805px; left: 90px;
+  }
+    ul.notas li#nota12 {
+	width: 60px; height: 60px; top: 805px; left: 170px;
+  }
+  ul.notas li#nota13 {
+	width: 60px; height: 60px; top: 114px; left: 77px;
+  }
+  ul.notas li#nota14 {
+	width: 60px; height: 60px; top: 112px; left: 199.5px;
+  }
+    ul.notas li#nota15 {
+	width: 60px; height: 60px; top: 430px; left: 10px;
+  }
+    ul.notas li#nota16 {
+	width: 60px; height: 60px; top: 430px; left: 270px;
+  }
+    ul.notas li#nota17 {
+	width: 60px; height: 60px; top: 365px; left: 100px;
+  }
+    ul.notas li#nota18 {
+	width: 60px; height: 60px; top: 465px; left:92px;
+  }
+    ul.notas li#nota19 {
+	width: 60px; height: 60px; top: 465px; left: 180px;
   }
 
+
+
+
+
+
+
+
+
  .craneo{
-	width: 65px; 
-	height: 50px; 
+	width: 86px; 
+	height: 100px; 
 	cursor: pointer;
-	margin-top: 10% !important;
 	background-color: transparent;
 	border-color: transparent;
-	transition: background-color 2s;
+	transition: background-color 5s;
  }
  .craneo:hover{
+	background: url("../.././../public/assets/img/dashboard/craneoci.JPG");	
+	border: medium solid white;
+ }
+ .cervical{
+	width: 40px; 
+	height: 30px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 5s;
+ }
+ .cervical:hover{
+	background: url("../.././../public/assets/img/dashboard/cervicalci.JPG");
+	border: medium solid white;
+ }
+
+ .torax{
+	width: 110px; 
+	height: 80px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 5s;
+ }
+ .torax:hover{
+	background: url("../.././../public/assets/img/dashboard/toraxci.JPG");
+	border: medium solid white;
+ }
+ .brazoi{
+	width: 60px; 
+	height: 200px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 5s;
+ }
+ .brazoi:hover{
+	background: url("../.././../public/assets/img/dashboard/brazoici.JPG");
+	border: medium solid white;
+ }
+ .brazod{
+	width: 60px; 
+	height: 200px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 1s;
+ }
+ .brazod:hover{
+	background: url("../.././../public/assets/img/dashboard/brazodci.JPG");
+	border: medium solid white;
+ }
+ .manod{
+	width: 60px; 
+	height: 85px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 1s;
+ }
+ .manod:hover{
 	background-color: black ;
 	border: medium solid white;
 	opacity: 0.5;
 	transform: scale(1.2);
  }
+ .manoi{
+	width: 60px; 
+	height: 85px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 1s;
+ }
+ .manoi:hover{
+	background-color: black ;
+	border: medium solid white;
+	opacity: 0.5;
+	transform: scale(1.2);
+ }
+ .pelvis{
+	width: 138px; 
+	height: 95px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 1s;
+ }
+ .pelvis:hover{
+	background-color: black ;
+	border: medium solid white;
+	opacity: 0.5;
+	transform: scale(1.2);
+ }
+ .piernai{
+	width: 70px; 
+	height: 350px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 1s;
+ }
+ .piernai:hover{
+	background-color: black ;
+	border: medium solid white;
+	opacity: 0.5;
+	transform: scale(1.2);
+ }
+ .piernad{
+	width: 70px; 
+	height: 350px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 1s;
+ }
+ .piernad:hover{
+	background-color: black ;
+	border: medium solid white;
+	opacity: 0.5;
+	transform: scale(1.2);
+ }
+ .pied{
+	width: 60px; 
+	height: 85px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 1s;
+ }
+ .pied:hover{
+	background-color: black ;
+	border: medium solid white;
+	opacity: 0.5;
+	transform: scale(1.2);
+ }
+ .piei{
+	width: 60px; 
+	height: 85px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 1s;
+ }
+ .piei:hover{
+	background-color: black ;
+	border: medium solid white;
+	opacity: 0.5;
+	transform: scale(1.2);
+ }
+ .hombroi{
+	width: 60px; 
+	height: 35px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 5s;
+ }
+ .hombroi:hover{
+	background: url("../.././../public/assets/img/dashboard/hombroici.JPG");
+	border: medium solid white;
+ }
+ .hombrod{
+	width: 65px; 
+	height: 35px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 5s;
+ }
+ .hombrod:hover{
+	background: url("../.././../public/assets/img/dashboard/hombrodci.JPG");
+	border: medium solid white;
+ }
+
+
+
 
  
 
