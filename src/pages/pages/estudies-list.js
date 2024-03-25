@@ -112,6 +112,14 @@ function Pages_Estudies_List(){
 	  
 	function adjustStyle(width) {
 		width = parseInt(width);
+		if((width >= 300) && (width < 1279)){
+			var div = document.getElementById('etiqueta');
+			if(div !== null){
+				while (div.hasChildNodes()){
+					div.removeChild(div.lastChild);
+				}
+			}
+		}	
 		if((width >= 1024) && (width < 1280)){
 			var change_class = document.getElementsByClassName("change_class");
 			var div = document.getElementById('etiqueta');
@@ -192,20 +200,23 @@ function Pages_Estudies_List(){
 									</div>									
 									<div className="border" >
 									<ul class="notas">
-    											<li id="nota1"><button class="craneo" href="#" title="craneo"></button></li>
-    											<li id="nota2"><button class="cervical" href="#" title="cervical"></button></li>
-												<li id="nota3"><button class="torax" href="#" title="torax"></button></li>
-												<li id="nota4"><button class="brazoi" href="#" title="brazo izquierdo"></button></li>
-												<li id="nota5"><button class="brazod" href="#" title="brazo derecho"></button></li>
-												<li id="nota6"><button class="manod" href="#" title="mano izquierda"></button></li>
-												<li id="nota7"><button class="manoi" href="#" title="mano derecha"></button></li>																								
-												<li id="nota8"><button class="pelvis" href="#" title="pelvis"></button></li>
-												<li id="nota9"><button class="piernai" href="#" title="pierna izquierda"></button></li>
-												<li id="nota10"><button class="piernad" href="#" title="pierna derecha"></button></li>
-												<li id="nota11"><button class="piei" href="#" title="pie izquierdo"></button></li>
-												<li id="nota12"><button class="pied" href="#" title="pie derecho"></button></li>
-												<li id="nota13"><button class="hombroi" href="#" title="hombro izquierdo"></button></li>
-												<li id="nota14"><button class="hombrod" href="#" title="hombro derecho"></button></li>
+    											<li id="nota1"><button class="craneo" href="#" title="Craneo"></button></li>
+    											<li id="nota2"><button class="cervical" href="#" title="Columna cervical"></button></li>
+												<li id="nota3"><button class="torax" href="#" title="Columna dorsal/toracica"></button></li>
+												<li id="nota4"><button class="brazoi" href="#" title="Brazo izquierdo"></button></li>
+												<li id="nota5"><button class="brazod" href="#" title="Brazo derecho"></button></li>
+												<li id="nota6"><button class="manod" href="#" title="Mano izquierda"></button></li>
+												<li id="nota7"><button class="manoi" href="#" title="Mano derecha"></button></li>																								
+												<li id="nota8"><button class="pelvisi" href="#" title="Pelvis"></button></li>
+												<li id="nota9"><button class="piernai" href="#" title="Pierna izquierda"></button></li>
+												<li id="nota10"><button class="piernad" href="#" title="Pierna derecha"></button></li>
+												<li id="nota11"><button class="piei" href="#" title="Pie izquierdo"></button></li>
+												<li id="nota12"><button class="pied" href="#" title="Pie derecho"></button></li>
+												<li id="nota13"><button class="hombroi" href="#" title="Hombro izquierdo"></button></li>
+												<li id="nota14"><button class="hombrod" href="#" title="Hombro derecho"></button></li>
+												<li id="nota15"><button class="lumbar" href="#" title="Columna lumbar"></button></li>
+												<li id="nota16"><button class="sacro" href="#" title="Región Sacro"></button></li>
+												<li id="nota17"><button class="coxis" href="#" title="Coxis"></button></li>
   											</ul>	
 									</div>									
 								</div>

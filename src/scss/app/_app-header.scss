@@ -555,25 +555,25 @@ width: 170px;
 	width: 60px; height: 60px; top: 139px; left: 243px;
   }
     ul.notas li#nota6 {
-	width: 60px; height: 60px; top: 430px; left: 10px;
+	width: 60px; height: 60px; top: 330.5px; left: 7.5px;
   }
     ul.notas li#nota7 {
-	width: 60px; height: 60px; top: 430px; left: 270px;
+	width: 60px; height: 60px; top: 335px; left: 267.5px;
   }
     ul.notas li#nota8 {
-	width: 60px; height: 60px; top: 365px; left: 100px;
+	width: 60px; height: 60px; top: 274.5px; left: 95.8px;
   }
     ul.notas li#nota9 {
-	width: 60px; height: 60px; top: 465px; left:92px;
+	width: 60px; height: 60px; top: 324px; left:95px;
   }
     ul.notas li#nota10 {
-	width: 60px; height: 60px; top: 465px; left: 180px;
+	width: 60px; height: 60px; top: 325.5px; left: 181px;
   }
     ul.notas li#nota11 {
-	width: 60px; height: 60px; top: 805px; left: 90px;
+	width: 60px; height: 60px; top: 653.5px; left: 82.5px;
   }
     ul.notas li#nota12 {
-	width: 60px; height: 60px; top: 805px; left: 170px;
+	width: 60px; height: 60px; top: 659px; left: 180px;
   }
   ul.notas li#nota13 {
 	width: 60px; height: 60px; top: 114px; left: 77px;
@@ -582,13 +582,13 @@ width: 170px;
 	width: 60px; height: 60px; top: 112px; left: 199.5px;
   }
     ul.notas li#nota15 {
-	width: 60px; height: 60px; top: 430px; left: 10px;
+	width: 30px; height: 200px; top: 232px; left: 141.5px;
   }
     ul.notas li#nota16 {
-	width: 60px; height: 60px; top: 430px; left: 270px;
+	width: 30px; height: 200px; top: 288px; left: 137.5px;
   }
     ul.notas li#nota17 {
-	width: 60px; height: 60px; top: 365px; left: 100px;
+	width: 30px; height: 200px; top: 314px; left: 146px;
   }
     ul.notas li#nota18 {
 	width: 60px; height: 60px; top: 465px; left:92px;
@@ -660,109 +660,98 @@ width: 170px;
 	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
-	transition: background-color 1s;
+	transition: background-color 5s;
  }
  .brazod:hover{
 	background: url("../.././../public/assets/img/dashboard/brazodci.JPG");
 	border: medium solid white;
  }
  .manod{
-	width: 60px; 
-	height: 85px; 
+	width: 61px; 
+	height: 75px; 
 	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
-	transition: background-color 1s;
+	transition: background-color 5s;
  }
  .manod:hover{
-	background-color: black ;
+	background: url("../.././../public/assets/img/dashboard/manodci.JPG");
 	border: medium solid white;
-	opacity: 0.5;
-	transform: scale(1.2);
  }
  .manoi{
-	width: 60px; 
-	height: 85px; 
+	width: 58px; 
+	height: 72px; 
 	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
-	transition: background-color 1s;
+	transition: background-color 5s;
  }
  .manoi:hover{
-	background-color: black ;
+	background: url("../.././../public/assets/img/dashboard/manodcd.JPG");
 	border: medium solid white;
-	opacity: 0.5;
-	transform: scale(1.2);
+
  }
- .pelvis{
-	width: 138px; 
-	height: 95px; 
+ .pelvisi{
+	width: 145px; 
+	height: 89px; 
 	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
-	transition: background-color 1s;
+	transition: background-color 5s;
  }
- .pelvis:hover{
-	background-color: black ;
+ .pelvisi:hover{
+	background: url("../.././../public/assets/img/dashboard/pelvisci.JPG");
 	border: medium solid white;
-	opacity: 0.5;
-	transform: scale(1.2);
  }
  .piernai{
-	width: 70px; 
-	height: 350px; 
+	width: 63px; 
+	height: 338px; 
 	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
 	transition: background-color 1s;
  }
  .piernai:hover{
-	background-color: black ;
+	background: url("../.././../public/assets/img/dashboard/piernaicid.JPG");
 	border: medium solid white;
-	opacity: 0.5;
-	transform: scale(1.2);
  }
  .piernad{
-	width: 70px; 
-	height: 350px; 
+	width: 63px; 
+	height: 338px; 
 	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
 	transition: background-color 1s;
  }
  .piernad:hover{
-	background-color: black ;
+	background: url("../.././../public/assets/img/dashboard/piernadci.JPG");
 	border: medium solid white;
-	opacity: 0.5;
-	transform: scale(1.2);
  }
  .pied{
-	width: 60px; 
-	height: 85px; 
+	width: 73px; 
+	height: 40px; 
 	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
 	transition: background-color 1s;
  }
  .pied:hover{
-	background-color: black ;
+	background: url("../.././../public/assets/img/dashboard/piedci.JPG");
 	border: medium solid white;
-	opacity: 0.5;
-	transform: scale(1.2);
+
  }
  .piei{
-	width: 60px; 
-	height: 85px; 
+	width: 73px; 
+	height: 45px; 
 	cursor: pointer;
 	background-color: transparent;
 	border-color: transparent;
 	transition: background-color 1s;
  }
  .piei:hover{
-	background-color: black ;
+	background: url("../.././../public/assets/img/dashboard/pieici.JPG");
 	border: medium solid white;
-	opacity: 0.5;
-	transform: scale(1.2);
+	
  }
  .hombroi{
 	width: 60px; 
@@ -788,6 +777,45 @@ width: 170px;
 	background: url("../.././../public/assets/img/dashboard/hombrodci.JPG");
 	border: medium solid white;
  }
+ .lumbar{
+	width: 54px; 
+	height: 65px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 5s;
+ }
+ .lumbar:hover{
+	background: url("../.././../public/assets/img/dashboard/lumbarci.JPG");
+	border: medium solid white;
+ }
+ .sacro{
+	width: 63px; 
+	height: 30px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 5s;
+ }
+ .sacro:hover{
+	background: url("../.././../public/assets/img/dashboard/sacroci.JPG");
+	border: medium solid white;
+ }
+ .coxis{
+	width: 47px; 
+	height: 28px; 
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	transition: background-color 5s;
+ }
+ .coxis:hover{
+	background: url("../.././../public/assets/img/dashboard/coxisci.JPG");
+	border: medium solid white;
+ }
+
+
+
 
 
 
