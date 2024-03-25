@@ -33,67 +33,67 @@ require('datatables.net-fixedcolumns-bs5');
 
 function over_craneo(e)
 {   
-	document.getElementById("titulo").innerHTML="Craneo";
+	document.getElementById("titulo").innerHTML="CRANEO";
 	document.getElementById("contenido").innerHTML="El cráneo está constituido por ocho huesos: Dos parietales, dos temporales, un frontal, un occipital, un esfenoides y un etmoides. Estos huesos al articularse entre si conforman en conjunto una estructura craneal de forma ovoidal, lo que determina un polo anterior (frontal) más estrecho y un polo posterior";
 }
 function over_hombro(e)
 {   
-	document.getElementById("titulo").innerHTML="Hombros";
+	document.getElementById("titulo").innerHTML="HOMBROS";
 	document.getElementById("contenido").innerHTML="Los tres huesos que forman la articulación del hombro son la clavícula, la escápula (omóplato) y el húmero (el hueso largo del brazo).";
 }
 function over_torax(e)
 {   
-	document.getElementById("titulo").innerHTML="Torax";
+	document.getElementById("titulo").innerHTML="TORAX";
 	document.getElementById("contenido").innerHTML="El Torax esta compuesto por: 24 costillas (2 grupos de 12), que están unidas a un hueso largo y plano ubicado en el centro del pecho llamado esternón, doce vértebras torácicas. El mediastino está ubicado centralmente y está limitado por dos cavidades pleurales lateralmente.";
 }
 function over_brazo(e)
 {   
-	document.getElementById("titulo").innerHTML="Brazos";
+	document.getElementById("titulo").innerHTML="BRAZOS";
 	document.getElementById("contenido").innerHTML="El brazo está compuesto por tres huesos: Un hueso de la parte superior del brazo llamado: (húmero) y Dos huesos del antebrazo llamados (cúbito y radio). El término “brazo roto” puede referirse a la fractura de cualquiera de estos tres huesos.";
 }
 function over_mano(e)
 {   
-	document.getElementById("titulo").innerHTML="Manos";
+	document.getElementById("titulo").innerHTML="MANOS";
 	document.getElementById("contenido").innerHTML="Cada mano posee 27 huesos, 8 en el carpo, 5 metacarpianos y un total de 14 falanges, los falanges son los 14 huesos que se encuentran en los dedos de cada mano y también en los dedos de cada pie. Cada dedo tiene 3 falanges (distal, media y proximal). El pulgar solo tiene 2 falanges.";
 }
 function over_cervical(e)
 {   
-	document.getElementById("titulo").innerHTML="Columna cervical";
+	document.getElementById("titulo").innerHTML="COLUMNA CERVICAL";
 	document.getElementById("contenido").innerHTML="La columna cervical comienza en la base del cráneo. Siete son las vértebras que componen la columna cervical, además de ocho pares de nervios cervicales. Cada vértebra cervical se denomina C1, C2, C3, C4, C5, C6 y C7. Los nervios cervicales también se abrevian desde C1 hasta C8.";
 }
 function over_toracica(e)
 {   
-	document.getElementById("titulo").innerHTML="Columna dorsal/toracica";
+	document.getElementById("titulo").innerHTML="COLUMNA DORSAL TORACICA";
 	document.getElementById("contenido").innerHTML="Existen 12 vértebras torácicas (denominadas T1-T12) en el cuerpo humano, estas se encuentran entre las vértebras cervicales y lumbares, en general tienden a ser más grandes que las vértebras cervicales pero más pequeñas que las lumbares. Cada una de las 12 vértebras torácicas posee un par de costillas unidas a ellas.";
 }
 function over_lumbar(e)
 {   
-	document.getElementById("titulo").innerHTML="Columna Lumbar";
+	document.getElementById("titulo").innerHTML="COLUMNA LUMBAR";
 	document.getElementById("contenido").innerHTML="Existen 5 Vertebras Lumbares (denominadas L1-L5) en el cuerpo humano la parte baja de la espalda, es la tercera región principal de la columna. La mayoría de las personas tienen Cinco huesos o vértebras en la columna lumbar, a pesar de que es común encontrar personas con Seis.";
 }
 function over_sacro(e)
 {   
-	document.getElementById("titulo").innerHTML="Región Sacro";
+	document.getElementById("titulo").innerHTML="REGION SACRO";
 	document.getElementById("contenido").innerHTML="La región sacra (sacro) se encuentra en la parte inferior de la columna vertebral y se encuentra entre el quinto segmento de la columna lumbar (L5) y el cóccix (coxis). El sacro es un hueso de forma triangular y consta de cinco segmentos (S1-S5) que están fusionados entre sí.";
 }
 function over_coxis(e)
 {   
-	document.getElementById("titulo").innerHTML="Coxis";
+	document.getElementById("titulo").innerHTML="COXIS";
 	document.getElementById("contenido").innerHTML="El cóccix, también conocido como coxis, es un pequeño hueso triangular compuesto de una cantidad variable (usualmente 3-4) de vértebras, conocidas como vértebras coccígeas. Corresponde a la última porción de la columna vertebral y contribuye a formar los límites de la pelvis menor o verdadera.";
 }
 function over_pelvis(e)
 {   
-	document.getElementById("titulo").innerHTML="Pelvis";
+	document.getElementById("titulo").innerHTML="PELVIS";
 	document.getElementById("contenido").innerHTML="La función principal de la Pelvis, es sostener los órganos pélvicos (vejiga y uretra, útero y vagina; y recto) en la posición adecuada porque de ello depende su normal funcionamiento. La Pelvis consta de 3 huesos: el Ilion, el Isquion y el Pubis. Estos tres huesos también son llamados huesos de la pelvis, huesos coxales o huesos innominados. Existen 4 Tipos de pelvis: Ginecoide, Androide, Antropoide y Platipeloide.";
 }
 function over_pierna(e)
 {   
-	document.getElementById("titulo").innerHTML="Femur / Pierna";
+	document.getElementById("titulo").innerHTML="FEMUR / PIERNA";
 	document.getElementById("contenido").innerHTML="La pierna según su concepto anatómico posee estos 4 huesos: Tibia, Peroné, Rótula y Fémur. En posición proximal, la tibia de la pierna se articula con el fémur del muslo por medio de la articulación de la rodilla. En posición distal, la tibia y el peroné de la pierna se articulan con el hueso astrágalo del pie mediante la articulación del tobillo.";
 }
 function over_pie(e)
 {   
-	document.getElementById("titulo").innerHTML="Pie";
+	document.getElementById("titulo").innerHTML="PIE";
 	document.getElementById("contenido").innerHTML="El pie es la porción terminal del miembro inferior, cuya función principal es soportar el peso y facilitar la locomoción. El pie consta de 26 huesos, incluidos los huesos del tarso, huesos metatarsianos y falanges. Los huesos del pie forman arcos longitudinales y transversales y están soportados por varios músculos, ligamentos y tendones que permiten flexibilidad, así como soporte dinámico y estático.";
 }
 function over_cuerpo(e)
