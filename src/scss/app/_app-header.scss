@@ -480,7 +480,7 @@ width: 170px;
 	0%,100%{
 		height: 20px;
 	}
-	90%{
+	100%{
 		height: calc(110% - 40px)
 	}
  }
@@ -995,7 +995,9 @@ width: 170px;
     border-radius: 4px !important;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
 }
-
+bg-contenido{
+background-color: gray;
+}
   
 
 
