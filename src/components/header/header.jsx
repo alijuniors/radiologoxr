@@ -56,8 +56,6 @@ function Header(props) {
 
 	function adjustStyle(width) {
 
-		
-		
 
 		if((width >= 1024) && (width < 1280)){
 		

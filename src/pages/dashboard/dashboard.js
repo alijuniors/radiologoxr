@@ -15,6 +15,7 @@ import Chart from 'react-apexcharts';
 
 
 
+
 function Dashboard() {
 
 
@@ -34,7 +35,6 @@ function Dashboard() {
     const end = new Date("11/15/2017");
      
 
-		
 	
 	
 
@@ -212,7 +212,7 @@ function Dashboard() {
 							<div className="d-flex fw-bold small mb-3">
 								<span className="label_a">Estadisticas de Pacientes</span>
 								<div className="d-flex fw-bold small mb-3 " style={{width: '300px'}}>
-								<DateRangePicker onChange={filter} value={date}></DateRangePicker>
+								<DateRangePicker onChange={filter} value={date} clearIcon={null}></DateRangePicker>
 								</div>
 								<div className="d-flex fw-bold small mb-3 " style={{width: '300px'}}>
 								

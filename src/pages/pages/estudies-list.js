@@ -96,7 +96,11 @@ function over_pie(e)
 	document.getElementById("titulo").innerHTML="Pie";
 	document.getElementById("contenido").innerHTML="El pie es la porción terminal del miembro inferior, cuya función principal es soportar el peso y facilitar la locomoción. El pie consta de 26 huesos, incluidos los huesos del tarso, huesos metatarsianos y falanges. Los huesos del pie forman arcos longitudinales y transversales y están soportados por varios músculos, ligamentos y tendones que permiten flexibilidad, así como soporte dinámico y estático.";
 }
-
+function over_cuerpo(e)
+{   
+	document.getElementById("titulo").innerHTML="DESCRIPCION OSEA DEL CUERPO HUMANO:";
+	document.getElementById("contenido").innerHTML="El esqueleto humano consta de 206 huesos. Se agrupan en: Esqueleto axial: formado por 80 huesos. De la cabeza, cuello y tronco. Esqueleto Apendicular: formado por 126 huesos.";
+}
 function Pages_Estudies_List(){
 
 	$(".partes").on("click", function(e){
@@ -256,31 +260,29 @@ function Pages_Estudies_List(){
 					<div className="col-xl-3 change_classs" id="etiqueta">
 						<Card className="Justify-content-center">
 							<CardBody className="Justify-content-center body_card_p">
-							    <div class="mapa_imagen">
-											
-										
+							    <div class="mapa_imagen">									
 								<div className="scan" >								
 									<div className="qrcode" >
 									</div>									
 									<div className="border" >
 									<ul class="notas">
-    											<li id="nota1"><button class="craneo" href="#" title="Craneo"  onMouseOver={over_craneo} ></button> </li>
-    											<li id="nota2"><button class="cervical" href="#" title="Columna cervical" onMouseOver={over_cervical}></button></li>
-												<li id="nota3"><button class="torax" href="#" title="Columna dorsal/toracica" onMouseOver={over_torax}></button></li>
-												<li id="nota4"><button class="brazoi" href="#" title="Brazo izquierdo"  onMouseOver={over_brazo}></button></li>
-												<li id="nota5"><button class="brazod" href="#" title="Brazo derecho" onMouseOver={over_brazo}></button></li>
-												<li id="nota6"><button class="manod" href="#" title="Mano izquierda" onMouseOver={over_mano}></button></li>
-												<li id="nota7"><button class="manoi" href="#" title="Mano derecha" onMouseOver={over_mano}></button></li>																								
-												<li id="nota8"><button class="pelvisi" href="#" title="Pelvis" onMouseOver={over_pelvis}></button></li>
-												<li id="nota9"><button class="piernai" href="#" title="Pierna izquierda" onMouseOver={over_pierna}></button></li>
-												<li id="nota10"><button class="piernad" href="#" title="Pierna derecha" onMouseOver={over_pierna}></button></li>
-												<li id="nota11"><button class="piei" href="#" title="Pie izquierdo" onMouseOver={over_pie}></button></li>
-												<li id="nota12"><button class="pied" href="#" title="Pie derecho" onMouseOver={over_pie}></button></li>
-												<li id="nota13"><button class="hombroi" href="#" title="Hombro izquierdo" onMouseOver={over_hombro}></button></li>
-												<li id="nota14"><button class="hombrod" href="#" title="Hombro derecho" onMouseOver={over_hombro}></button></li>
-												<li id="nota15"><button class="lumbar" href="#" title="Columna lumbar" onMouseOver={over_lumbar}></button></li>
-												<li id="nota16"><button class="sacro" href="#" title="Región Sacro" onMouseOver={over_sacro}></button></li>
-												<li id="nota17"><button class="coxis" href="#" title="Coxis" onMouseOver={over_coxis}></button></li>
+    											<li id="nota1"><button class="craneo" href="#" title="Craneo"  onMouseOver={over_craneo}  onMouseOut={over_cuerpo}></button> </li>
+    											<li id="nota2"><button class="cervical" href="#" title="Columna cervical" onMouseOver={over_cervical} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota3"><button class="torax" href="#" title="Columna dorsal/toracica" onMouseOver={over_torax} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota4"><button class="brazoi" href="#" title="Brazo izquierdo"  onMouseOver={over_brazo}onMouseOut={over_cuerpo}></button></li>
+												<li id="nota5"><button class="brazod" href="#" title="Brazo derecho" onMouseOver={over_brazo} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota6"><button class="manod" href="#" title="Mano izquierda" onMouseOver={over_mano} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota7"><button class="manoi" href="#" title="Mano derecha" onMouseOver={over_mano} onMouseOut={over_cuerpo}></button></li>																								
+												<li id="nota8"><button class="pelvisi" href="#" title="Pelvis" onMouseOver={over_pelvis} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota9"><button class="piernai" href="#" title="Pierna izquierda" onMouseOver={over_pierna} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota10"><button class="piernad" href="#" title="Pierna derecha" onMouseOver={over_pierna} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota11"><button class="piei" href="#" title="Pie izquierdo" onMouseOver={over_pie} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota12"><button class="pied" href="#" title="Pie derecho" onMouseOver={over_pie} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota13"><button class="hombroi" href="#" title="Hombro izquierdo" onMouseOver={over_hombro} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota14"><button class="hombrod" href="#" title="Hombro derecho" onMouseOver={over_hombro} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota15"><button class="lumbar" href="#" title="Columna lumbar" onMouseOver={over_lumbar} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota16"><button class="sacro" href="#" title="Región Sacro" onMouseOver={over_sacro} onMouseOut={over_cuerpo}></button></li>
+												<li id="nota17"><button class="coxis" href="#" title="Coxis" onMouseOver={over_coxis} onMouseOut={over_cuerpo}></button></li>
   											</ul>	
 									</div>									
 								</div>
