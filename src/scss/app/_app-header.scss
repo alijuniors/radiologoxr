@@ -332,13 +332,13 @@ margin-right: 5%;
 width: 170px;
 }
 .img_p_e{
-	height: 200px !important;
-    width: 270px !important;
-	margin: 2% !important;
-	padding-left: 10% !important;	
+	height: 130px !important;
+    width: 147px !important;
+    margin: 0% !important;
+    padding-left: 0% !important;
 }
 .body_card_p{
-	padding-bottom: 11%;
+	padding-bottom: 1%;
 }
 .button_bar_e{
 	height: 55px !important;
@@ -346,6 +346,7 @@ width: 170px;
 }
 .button_me{
 	margin: 1%;
+	font-size: 13px !important;
 }
 .button_met{
 	font-size: 13px !important;
@@ -376,10 +377,11 @@ width: 170px;
 	font-size: 10px !important
 }
 .buttontwoe{
-	padding-left: 11% !important;	
+	padding-left: 2% !important;	
 }
 .buttoncentral5{
-	margin-left: -23% !important;
+	margin-left: 0% !important;
+	font-size: 1.5em !important;
 }
 .button_rep{
 	margin-left: -81% !important;
@@ -439,7 +441,7 @@ width: 170px;
 
 }
 .text_adaptr{
-	padding-bottom: 45% !important;
+	padding-bottom: 83.6% !important;
     	
 }
 .container_xl{
@@ -474,14 +476,14 @@ width: 170px;
 	background-repeat: no-repeat;
 	background-size: 320px 700px;
 	overflow: hidden;
-	animation: animate 5s ease-in-out infinite;
+	animation: animate 7s ease-in-out infinite;
  }
  @keyframes animate {
-	0%,100%{
+	20%{
 		height: 20px;
 	}
-	100%{
-		height: calc(110% - 40px)
+	50%{
+		height: calc(120% - 40px)
 	}
  }
  .scan .qrcode::after{
@@ -492,14 +494,14 @@ width: 170px;
 	height: 4px;
 	background: rgb(17, 0, 255);
 	filter: drop-shadow(0 0 20px #3542fd) drop-shadow( 0 0 60px #3542fd);
-	animation: animateLine 5s ease-in-out infinite;
+	animation: animateLine 7s ease-in-out infinite;
  }
  @keyframes animateLine {
-   	0%,100%{
+   	20%{
 		top: 0px;
 	}
 	50%{
-		top: calc(120% - 200px);
+		top: calc(128% - 200px);
 	}
  }
 .border{
@@ -995,12 +997,70 @@ width: 170px;
     border-radius: 4px !important;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
 }
-bg-contenido{
+.bg-contenido{
 background-color: gray;
 }
-  
-
-
+.div_emergencia{
+	margin-top: -37%;
+    width: 54%;
+    margin-left: 45%;
+}
+.btn_emergencia{
+	width: 104% !important;
+	margin-bottom: 3% !important;
+}
+.text_title_pa{
+	font-size: 0.9em !important;
+	color:aqua !important;
+	text-transform: uppercase;	
+}
+.text_title_pa2{
+	color:aqua !important;
+	font-size: 0.9em !important;
+	padding-left: 12% !important;	
+}
+.text_title_pa3{
+	color:aqua !important;
+	font-size: 0.9em !important;
+}
+.text_title_pa4{
+	color: #00ff40 !important;
+	font-size: 0.9em !important;
+}
+.text_normal{
+	font-size: 1.1em !important;
+	text-transform: uppercase;
+}
+.cardbody_p{
+	margin-bottom: 8% !important;
+}
+.text_title_pali{
+	color:aqua !important;
+	font-size: 1.2em !important;
+	margin-left: 14% !important;
+	font-weight: bold;
+}
+.divli{
+	margin-top: -3% !important;
+    margin-bottom: 2% !important;	
+}
+.button_mev{
+	margin-right: 16% !important;
+}
+.button_mev2{
+	margin-right: 3% !important;
+	background-color: yellow;
+	color:red;
+	padding: 4% !important;
+	font-weight: bold;
+	font-size: 1.2em !important;
+}
+.craneo_adjust{
+	padding-bottom: 18% !important;
+}
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+	text-align: left !important;
+}
 
 
 

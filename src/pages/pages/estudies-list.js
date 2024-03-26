@@ -34,6 +34,8 @@ require('datatables.net-fixedcolumns-bs5');
 function over_craneo(e)
 {   
 	document.getElementById("contenido").innerHTML="CRANEO: El cráneo está constituido por ocho huesos: Dos parietales, dos temporales, un frontal, un occipital, un esfenoides y un etmoides. Estos huesos al articularse entre si conforman en conjunto una estructura craneal de forma ovoidal, lo que determina un polo anterior (frontal) más estrecho y un polo posterior";
+	var change_classc = document.getElementsByClassName("body_card_p");
+	change_classc[0].classList.add("craneo_adjust");
 }
 function over_hombro(e)
 {   
@@ -165,6 +167,8 @@ function Pages_Estudies_List(){
 
 	  
 	function adjustStyle(width) {
+		
+
 		width = parseInt(width);
 		if((width >= 300) && (width < 1279)){
 			var div = document.getElementById('etiqueta');
@@ -273,7 +277,7 @@ function Pages_Estudies_List(){
 									</div>									
 								</div>
 								</div>	
-							    <span id="contenido" className="bg-contenido"> DESCRIPCIÓN OSEA DEL CUERPO HUMANO: El esqueleto humano consta de 206 huesos. Se agrupan en: Esqueleto axial: formado por 80 huesos. De la cabeza, cuello y tronco. Esqueleto Apendicular: formado por 126 huesos. Además, aunque se estima que hay alrededor de 78 órganos principales en el cuerpo humano, esta cifra puede variar dependiendo de la definición especifica de "órgano" y la inclusión de estructuras como la piel como el órgano  más grande del cuerpo.</span>			
+							    <div id="contenido" className="bg-contenido Justify-content-center"> DESCRIPCIÓN OSEA DEL CUERPO HUMANO: El esqueleto humano consta de 206 huesos. Se agrupan en: Esqueleto axial: formado por 80 huesos. De la cabeza, cuello y tronco. Esqueleto Apendicular: formado por 126 huesos. Además, aunque se estima que hay alrededor de 78 órganos principales en el cuerpo humano, esta cifra puede variar dependiendo de la definición especifica de "órgano" y la inclusión de estructuras como la piel como el órgano  más grande del cuerpo.</div>			
 				        	</CardBody>
 						</Card>
 						
@@ -313,35 +317,39 @@ function Pages_Estudies_List(){
 									<div class="row no-gutters">
 										<div className="mb-4 change_class">					
 										<Card className="change_classse">
-											<CardBody className="Justify-content-center">																		
-												<img className="img_p_e change_class col-auto  text-center" src={detail.img} alt="" />  										
+											<CardBody className="Justify-content-center cardbody_p">																		
+												<img className="img_p_e change_class col-auto  text-center" src={detail.img} alt="" />
+												<div className="div_emergencia">
+												<a href="#/" className="btn btn-danger btn-lg active btn_emergencia">EMERGENCIA</a>
+												<br></br>
+												<span class="h-28px  fs-13px overflow-hidden mb-n1 col-auto p-1 text-center text_title_pa">{detail.examen}</span> 
+												<br></br>												
+												<span class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center text_title_pa2">MODALIDAD: {detail.modalidad}</span>
+												<br></br>
+												<span class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center text_title_pa2">SERIES / IMAGENES: {detail.series}</span>
+												</div> 										
 											</CardBody>									
 										</Card>  
 									   </div>                           
 									<div className="mb-12 change_class">
 									   <Card className="change_classse">
 											   <CardBody className="Justify-content-center">
-												<div class="small text-inverse text-opacity-50 col-auto p-1 text-center">{detail.nombre}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">Edad: {detail.edad}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">GRUPO DE EDAD: {detail.grupo_edad}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">CEDULA: {detail.cedula}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">FACTURA #: {detail.nfactura}</div>
-												<div class="h-28px  fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">{detail.examen}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">MODALIDAD: {detail.modalidad}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">SERIES / IMAGENES: {detail.series}</div>
-												<div class="h-40px fs-13px overflow-hidden mb-n1 button_bar_e  col-auto p-1 text-center"><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver estudio</a><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver en weasis</a><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver en horos</a></div>
-												<div class="h-35px fs-13px overflow-hidden mb-n1  col-auto p-1 text-center">HISTORIA CLINICA</div>
-												<div class="h-40px fs-13px overflow-hidden mb-n1  col-auto p-1 text-center"> <a href="#/" class="btn btn-sm btn-outline-theme fs-11px button_met">Cargar</a></div>
-												<div class="h-35px fs-13px overflow-hidden mb-n1   col-auto p-2 text-center">GESTIÓN DE REPORTES</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1  text_e col-auto p-1 text-center">ESTADO: {detail.estado}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1  text_e col-auto p-1 text-center">REPORTADO POR: {detail.doctor}</div>
-												<div class="h-40px fs-13px overflow-hidden mb-n1 textbuttonp  col-auto p-1 text-center"><a href="#/" class="btn btn-sm btn-outline-theme fs-11px button_met">Ver Reportes</a></div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1  text_e col-auto p-1 text-center">PACIENTE USO REPORTE DIGITAL: {detail.reporte_digital}</div>
-												<div class="h-28px fs-13px overflow-hidden mb-n1  text_e col-auto p-1 text-center">FECHA PACIENTE CONSULTO: {detail.fecha_paciente}</div>
-												<div class="h-40px fs-13px overflow-hidden mb-n1 col-auto p-1 text-center">ENTREGA DE IMAGENES Y REPORTES</div>
-												<div class="h-40px fs-13px overflow-hidden mb-n1  buttontwoe col-auto p-1 text-center"><a href="#/" class="btn btn-sm btn-outline-theme fs-11px button_me">CODIGO QR</a><a href="#/" class="btn btn-sm btn-outline-theme fs-11px ">ENVIAR EMAIL</a></div>
-												<div class="h-40px fs-13px overflow-hidden mb-n1 text_adapt col-auto  text-center"> <a href="#/" class="btn btn-sm btn-outline-theme fs-11px button_met buttoncentral5">DESTINO DICOM</a></div>
-											</CardBody>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 "><span className="text_title_pa3">Paciente:</span><span className="text_normal">{detail.nombre}</span></div>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 "><span className="text_title_pa4">{detail.sexo}</span> | <span className="text_title_pa3">Cedula:</span> <span className="text_title_pa4">{detail.cedula}</span></div>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 width1280 "><span className="text_title_pa3">Nacimiento:</span> <span className="text_title_pa4">31/12/1980</span> <span className="text_title_pa3">Edad:</span> <span className="text_title_pa4">{detail.edad}</span><span className="text_title_pa3"> Grupo de Edad:</span><span className="text_title_pa4">Adulto</span></div>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 width1280"><span className="text_title_pa3">Reg. Unico:</span> <span className="text_title_pa4">21548751-659</span> <span className="text_title_pa3">Factura:</span> <span className="text_title_pa4">{detail.nfactura}</span></div>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 divli"><span className="text_title_pali">_________________________</span></div>											
+												<div class="h-40px fs-13px overflow-hidden mb-n1 button_bar_e  col-auto p-1  width1280"><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver estudio</a><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver en weasis</a><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">Ver en horos</a></div>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 divli"><span className="text_title_pali">_________________________</span></div>
+												<div class="h-40px fs-13px overflow-hidden mb-n1  buttontwoe col-auto p-1"><a href="#/" class="btn btn-sm btn-outline-theme fs-11px button_me button_mev">Historia Clinica</a><a href="#/" class="btn btn-sm btn-outline-theme fs-11px button_me ">Cargar Documentos</a></div>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 divli"><span className="text_title_pali">_________________________</span></div>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 "><span className="text_normal">Alerta</span></div>
+												<div class="h-40px fs-13px overflow-hidden mb-n1  buttontwoe col-auto p-1"><span class=" fs-11px button_me button_mev2">REPORTE DEMORADO</span><a href="#/" class="btn btn-sm btn-outline-theme fs-11px button_me ">REPORTES</a></div>
+												<div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 divli"><span className="text_title_pali">_________________________</span></div>
+												<div class="h-40px fs-13px overflow-hidden mb-n1 button_bar_e  col-auto p-1  width1280"><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">CODIGO QR</a><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">ENVIAR EMAIL</a><a href="#/" class="btn btn-sm btn-outline-theme fs-10px button_me">WHATSAPP</a></div>
+											    <div class="h-28px fs-13px overflow-hidden mb-n1 col-auto p-1 divli"><span className="text_title_pali">_________________________</span></div>
+												<div class="h-40px fs-13px overflow-hidden mb-n1 text_adaptr col-auto  text-center"> <a href="#/" class="btn btn-sm btn-outline-theme fs-11px button_met buttoncentral5">DESTINO DICOM</a></div>											
+											   </CardBody>
 										</Card>
 									</div>										
 										</div>
