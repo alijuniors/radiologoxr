@@ -25,6 +25,9 @@ function TablePlugins() {
     tableRef.current = $('#datatableDefault').DataTable({
       dom: "<'row mb-3'<'col-md-4 mb-3 mb-md-0'l><'col-md-8 text-end'<'d-lg-flex justify-content-end'f<'d-lg-block d-none'B>>>>t<'row align-items-center mt-2'<'mr-auto col-md-6 mb-3 mb-md-0 mt-n2 'i><'mb-0 col-md-6'p>>",
       lengthMenu: [20, 30, 40, 50 ],
+      bScrollInfinite: true,
+      bScrollCollapse: true,
+      sScrollY: "200px",
       responsive: true,
  
       buttons: [
@@ -39,6 +42,7 @@ function TablePlugins() {
             targets: 0,
         }
     ],
+    
     [ {}]
     
     

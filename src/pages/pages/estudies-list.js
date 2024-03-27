@@ -14,6 +14,7 @@ import Detail_Pacientes from '../../assets/data/detail_pacientes/detail_paciente
 import DataTables from 'datatables.net';
 import DataTable from 'datatables.net-fixedcolumns-bs5';
 import Table_a from "../../components/table_a/table_x_d.jsx";
+import Example from "../../components/table_a/JS.tsx";
 
 const $ = require('jquery');
 $.DataTable = require('datatables.net');
@@ -122,7 +123,7 @@ function Pages_Estudies_List(){
 		setSelectitem(item);
 	  };
 
-	
+
 
 	
 
@@ -259,15 +260,10 @@ function Pages_Estudies_List(){
 						<div className="col-xl-6 change_classs">														
 							<div id="datatable" className="mb-5 datatable">
 								<Card>
-								    
-									<CardBody>
-									<h6 >Listado de pacientes</h6>
-										<Table_a  eventClick={(e)=>selectClick(e)
-							}>
-
-										</Table_a>
+					                <CardBody >
+									  <h6>Listado de pacientes</h6>	
+									  <Example />
 									</CardBody>
-					
 								</Card>
 							</div>
 						</div>
