@@ -51,6 +51,10 @@ function TablePlugins() {
       <table id="datatableDefault" className="table text-nowrap w-100">
         <thead>
           <tr>
+            <th>#</th>
+            <th>#</th>
+            <th>#</th>
+            <th>#</th>
             <th>Name</th>
             <th>Position</th>
             <th>Office</th>
@@ -61,6 +65,10 @@ function TablePlugins() {
         </thead>
         <tbody>
           <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>Tiger Nixon</td>
             <td>System Architect</td>
             <td>Edinburgh</td>
@@ -69,6 +77,10 @@ function TablePlugins() {
             <td>$320,800</td>
           </tr>
           <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>Garrett Winters</td>
             <td>Accountant</td>
             <td>Tokyo</td>

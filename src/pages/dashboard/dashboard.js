@@ -2,14 +2,24 @@ import React, { useEffect, useState } from 'react';
 import jsVectorMap from 'jsvectormap';
 import 'jsvectormap/dist/maps/world.js';
 import Select from 'react-select';
+import moment from "moment";
+import DateRangePicker from '@wojtekmaj/react-daterange-picker';
 import 'jsvectormap/dist/css/jsvectormap.min.css';
 import { Card, CardBody, CardExpandToggler } from './../../components/card/card.jsx';
 import Chart from 'react-apexcharts';
-import Mes  from '../../config/app-mes.jsx';
-import Anlo  from '../../config/app-anlo.jsx';
+
+
+
+
+
+
+
 
 
 function Dashboard() {
+
+
+	
 	
 	function randomNo() {
 		return Math.floor(Math.random() * 60) + 30
@@ -21,8 +31,11 @@ function Dashboard() {
 		{ name: 'Uso del Cpu', data: [randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(),randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo()]}
 	];
 
-	
+	const start = new Date("10/7/2017");
+    const end = new Date("11/15/2017");
+     
 
+	
 	
 
 
@@ -75,19 +88,19 @@ function Dashboard() {
   	var bodyColor = (getComputedStyle(document.body).getPropertyValue('--bs-body-color')).trim();
   	var inverseRgb = (getComputedStyle(document.body).getPropertyValue('--bs-inverse-rgb')).trim();
   	var themeColor = (getComputedStyle(document.body).getPropertyValue('--bs-theme')).trim();
-		var themeFont = (getComputedStyle(document.body).getPropertyValue('--bs-body-font-family')).trim();
+	var themeFont = (getComputedStyle(document.body).getPropertyValue('--bs-body-font-family')).trim();
 		
   	return {
     	chart: { toolbar: { show: false } },
    		plotOptions: { bar: { horizontal: false, columnWidth: '55%', endingShape: 'rounded' } },
     	dataLabels: { enabled: false },
-			grid: { show: true, borderColor: borderColor },
+			grid: { show: true, borderColor: 'white' },
 			stroke: { show: false },
-    	colors: ['rgba('+ inverseRgb +', .15)', themeColor],
-			legend: { fontFamily: themeFont, labels: { colors: bodyColor } },
+    	colors: ['rgba('+ inverseRgb +', .65)', themeColor],
+			legend: { fontFamily: themeFont, labels: { colors:'white' } },
 			xaxis: {
 				categories: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],
-				labels: { show: true },
+				labels: { style: { colors: bodyColor, fontSize: '12px', fontFamily: themeFont, fontWeight: 400, cssClass: 'apexcharts-xaxis-label' } },
 				axisBorder: { show: true, color: borderColor, height: 1, width: '100%', 	offsetX: 0, offsetY: -1 },
 				axisTicks: { show: true, borderType: 'solid', color: borderColor, height: 6, offsetX: 0, offsetY: 0 },
 			},
@@ -127,7 +140,20 @@ function Dashboard() {
 				backgroundColor: 'transparent',
 			});
 		}
+  } 
+  const today = new Date();
+  const todayh = moment(today).subtract( 7, "days");
+  const [date, setDate] = useState([todayh,today]);
+  const [startDate, setStart] = useState(today );
+  const [endDate, setEnd] = useState(today);
+  function filter(e){
+
+    setDate(e)
+    setStart(e[0])
+    setEnd(e[1])
+
   }
+
   
   useEffect(() => {
 		fetch('/assets/data/dashboard/stats.json').then(res => res.json()).then((result) => { setStatsData(result); });
@@ -185,11 +211,11 @@ function Dashboard() {
 						<CardBody>
 							<div className="d-flex fw-bold small mb-3">
 								<span className="label_a">Estadisticas de Pacientes</span>
-								<div className="d-flex fw-bold small mb-4 " style={{width: '300px'}}>
-								<Select options={Mes} classNamePrefix="react-select" />
+								<div className="d-flex fw-bold small mb-3 " style={{width: '300px'}}>
+								<DateRangePicker onChange={filter} value={date} clearIcon={null}></DateRangePicker>
 								</div>
 								<div className="d-flex fw-bold small mb-3 " style={{width: '300px'}}>
-								<Select options={Anlo} classNamePrefix="react-select" />
+								
 								</div>
 								
 								<CardExpandToggler />
