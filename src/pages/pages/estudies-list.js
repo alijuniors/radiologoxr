@@ -16,7 +16,6 @@ import DataTable from 'datatables.net-fixedcolumns-bs5';
 import Table_a from "../../components/table_a/table_x_d.jsx";
 
 const $ = require('jquery');
-require('../../components/maphilight/jquery.maphilight.js');
 $.DataTable = require('datatables.net');
 require('datatables.net-bs5');
 require('datatables.net-buttons');
@@ -96,31 +95,6 @@ function Pages_Estudies_List(){
 	   var value = $(this).attr('value');
 	   alert(value);
 	})
-
-	$(function() {
-		$('.map').maphilight({
-			fill: true,
-			fillColor: '044572',
-			fillOpacity: 0.2,
-			stroke: true,
-			strokeColor: '044572',
-			strokeOpacity: 4,
-			strokeWidth: 1,
-			fade: true,
-			alwaysOn: false,
-			neverOn: false,
-			groupBy: false,
-			wrapClass: true,
-			shadow: false,
-			shadowX: 0,
-			shadowY: 0,
-			shadowRadius: 6,
-			shadowColor: '000000',
-			shadowOpacity: 0.1,
-			shadowPosition: 'outside',
-			shadowFrom: true
-	});
-	});
     
     const [code1, setCode1] = useState();
 	const [selectitem, setSelectitem] = useState(0);
